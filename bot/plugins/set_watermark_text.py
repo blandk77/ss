@@ -25,7 +25,7 @@ async def _(c, m):
             text=f"The watermark text you provided (__{watermark_text}__) is `{len(watermark_text)}` "
             "characters long! You cannot set watermark text greater than 30 characters.",
             quote=True,
-            parse_mode="markdown",
+            parse_mode=ParseMode.HTML,
         )
         return
 
@@ -34,5 +34,5 @@ async def _(c, m):
         text=f"You have successfully set __{watermark_text}__ as your watermark text. From now on this will "
         "be applied to your screenshots! To remove watermark text see /settings.",
         quote=True,
-        parse_mode="markdown",
+        parse_mode=ParseMode.HTML,
     )
