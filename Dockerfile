@@ -8,4 +8,4 @@ COPY . .
 
 RUN pip install -U -r requirements.txt
 
-CMD [ "python", "-m", "bot" ]
+CMD gunicorn app:app & python -m bot
