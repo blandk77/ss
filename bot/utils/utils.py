@@ -3,9 +3,7 @@ import random
 import asyncio
 import logging
 from urllib.parse import urljoin
-
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
-
 from bot.config import Config
 
 
@@ -74,9 +72,9 @@ class Utilities:
 
     @staticmethod
     def generate_stream_link(media_msg):
-    file_id = media_msg.id
-    chat_id = media_msg.chat.id
-    return urljoin(Config.HOST, f"file/{chat_id}/{file_id}")
+        file_id = media_msg.id
+        chat_id = media_msg.chat.id
+        return urljoin(Config.HOST, f"file/{chat_id}/{file_id}")
 
     @staticmethod
     async def get_media_info(file_link):
