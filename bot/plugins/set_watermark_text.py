@@ -1,5 +1,5 @@
 from pyrogram import filters
-
+from pyrogram.enums import ParseMode
 from bot.screenshotbot import ScreenShotBot
 from bot.database import Database
 
@@ -12,10 +12,10 @@ async def _(c, m):
 
     if len(m.command) == 1:
         await m.reply_text(
-            text="You can add custom watermark text to the screenshots.\n\nUsage: `/set_watermark text`. "
+            text="<b>You can add custom watermark text to the screenshots</b>.\n\nUsage: `/set_watermark text`. "
             "Text should not Exceed 30 characters.",
             quote=True,
-            parse_mode="markdown",
+            parse_mode=ParseMode.HTML,
         )
         return
 
