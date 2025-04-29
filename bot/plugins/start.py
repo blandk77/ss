@@ -1,10 +1,10 @@
-from pyrogram import filters
+from pyrogram import filters, Client 
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 from ..screenshotbot import ScreenShotBot
 
 
-@ScreenShotBot.on_message(filters.private & filters.command("start"))
+@Client.on_message(filters.private & filters.command("start"))
 async def start(c, m):
 
     await m.reply_text(
@@ -14,12 +14,9 @@ async def start(c, m):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton(
-                        "Source 😒", url="https://github.com/odysseusmax/animated-lamp"
-                    ),
-                    InlineKeyboardButton("Project Channel", url="https://t.me/odbots"),
+                    InlineKeyboardButton("Updates", url="https://t.me/The_TGguy"),
                 ],
-                [InlineKeyboardButton("My Father", url="https://t.me/odysseusmax")],
+                [InlineKeyboardButton("Owner", url="https://t.me/Itsme123c")],
             ]
         ),
     )
