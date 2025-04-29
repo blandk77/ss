@@ -1,6 +1,11 @@
-pyrogram
+pyrofork
 tgcrypto
 motor
 dnspython
 async-timeout
 aiohttp
+Flask
+gunicorn
+Jinja2
+werkzeug
+itsdangerous
