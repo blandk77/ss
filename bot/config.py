@@ -2,23 +2,23 @@ import os
 
 class Config:
     # Telegram API credentials (obtained from https://my.telegram.org/apps)
-    API_ID = int(os.getenv("API_ID", ""))  # Replace 1234567 with your API ID
-    API_HASH = os.getenv("API_HASH", "")  # Replace with your API Hash
+    API_ID = int(os.getenv("API_ID", "27394279"))  # Replace 1234567 with your API ID
+    API_HASH = os.getenv("API_HASH", "90a9aa4c31afa3750da5fd686c410851")  # Replace with your API Hash
 
     # Bot token (obtained from @BotFather on Telegram)
-    BOT_TOKEN = os.getenv("BOT_TOKEN", "")  # Replace with your Bot Token
+    BOT_TOKEN = os.getenv("BOT_TOKEN", "7721902522:AAHamnJnM9f1AjWPvhl4NpzLeoM_d5TW6Dw")  # Replace with your Bot Token
 
     # Session name for Pyrogram (can be any string, or leave as default)
     SESSION_NAME = os.getenv("SESSION_NAME", "Screenshot")  # Default in-memory session
 
     # Telegram channel ID for logging (e.g., -1001234567890)
-    LOG_CHANNEL = int(os.getenv("LOG_CHANNEL", ""))  # Replace with your channel ID
+    LOG_CHANNEL = int(os.getenv("LOG_CHANNEL", "-1002288135729"))  # Replace with your channel ID
 
     # Database URL (e.g., for PostgreSQL or SQLite)
-    DATABASE_URL = os.getenv("DATABASE_URL", "")  # Replace with your DB URL
+    DATABASE_URL = os.getenv("DATABASE_URL", "mongodb+srv://telegramguy21:tnkIwvbNkJ5U3fZ7@botsuse.bpgag.mongodb.net/?retryWrites=true&w=majority&appName=Botsuse")  # Replace with your DB URL
 
     # List of authorized user IDs (Telegram user IDs)
-    AUTH_USERS = [int(i) for i in os.getenv("AUTH_USERS", "").split()]  # Replace with user IDs
+    AUTH_USERS = [int(i) for i in os.getenv("AUTH_USERS", "7465574522").split()]  # Replace with user IDs
 
     # Maximum concurrent processes per user
     MAX_PROCESSES_PER_USER = int(os.getenv("MAX_PROCESSES_PER_USER", "2"))  # Adjust as needed
