@@ -31,10 +31,10 @@ class Config:
     TRACK_CHANNEL = int(TRACK_CHANNEL) if TRACK_CHANNEL != "False" else False  # Handle False or channel ID
 
     # Delay for slow speed processes (in seconds)
-    SLOW_SPEED_DELAY = int(os.getenv("SLOW_SPEED_DELAY", "5"))  # Adjust as needed
+    SLOW_SPEED_DELAY = int(os.getenv("SLOW_SPEED_DELAY", "2"))  # Adjust as needed
 
     # Host URL or IP (leave empty if not used)
-    HOST = os.getenv("HOST", "")  # Replace with host if needed
+    HOST = os.getenv("HOST", "https://improved-casi-tg-guy-7034d8e8.koyeb.app/")  # Replace with host if needed
 
     # Timeout for processes (in seconds)
     TIMEOUT = int(os.getenv("TIMEOUT", "1800"))  # 30 minutes; adjust as needed
@@ -46,7 +46,7 @@ class Config:
     WORKER_COUNT = int(os.getenv("WORKER_COUNT", "20"))  # Adjust as needed
 
     # Custom header for IAM (leave empty if not used)
-    IAM_HEADER = os.getenv("IAM_HEADER", "")  # Replace with header if needed
+    IAM_HEADER = os.getenv("IAM_HEADER", "Telegram-Guy")  # Replace with header if needed
 
     COLORS = [
         "white",
